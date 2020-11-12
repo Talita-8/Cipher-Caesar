@@ -7,14 +7,14 @@
 
 ***
 
-## 1. Ceasar Cipher 
+## 1. Caesar Cipher
 
 Tenho o prazer de apresentar-lhes meu primeiro projeto realizado na Laboratoria.
 
-A **Cipher Ceasar** é uma aplicação Web destinada aos curiosos de plantão.
+A **Caesar Cipher** é uma aplicação Web destinada aos curiosos de plantão.
 Há muito conteúdo na internet sobre o assunto, porém pouco interativo e cansativo. 
 Essa aplicação não tem a intenção de ser um conteúdo completo, pelo contrário, traz descontração no aprendizado e despertará o interesse no usuário de se aprofundar mais no assunto. 
-A Cipher Ceasar poderá ser usada por crianças, estudantes ou qualquer pessoa que goste de desafios e jogos que ensinam.
+A Caesar Cipher poderá ser usada por crianças, estudantes ou qualquer pessoa que goste de desafios e jogos que ensinam.
 
 Nela o usuário aprenderá sobre uma das principais técnicas de criptografia de forma rápida e divertida!
 
