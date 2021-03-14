@@ -1,331 +1,187 @@
-/* Formatação geral */
-
-html {
-    width: 100%;
-    height: 100%;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body  { 
-    
-    background-image: url("./img/cesar.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}   
-
-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    background-color:#192231;
-    color: rgb(221, 225, 230);
-    font-style: initial;
-    font-size: 45px;
-
-    width: 100%;
-    height: 60px;
-    
+body {
+  background-image: url("./images/cesar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 1rem;
+
+  background-color: #192231;
+  color: rgb(221, 225, 230);
+
+  text-align: center;
+  font-style: initial;
+  font-weight: bold;
+  font-size: 45px;
+
+  box-shadow: -5px 3.5px 0.4rem rgb(75, 59, 44);
+}
+
 .hifenH1 {
-    color: rgb(7, 19, 59);
+  color: rgb(7, 19, 59);
 }
 
-
-/* Menu */
-
-#menu ul {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 10px;
-    background-color: rgba(152, 94, 109, 0.274);
-    list-style: none;
-}
-#menu ul li {
-    
-    margin: 1px 4px;
-    padding: 2px 10px;
-
-        
-}
-#menu ul a{
-    width: 22%;
-    border-radius: 30px;
-    color: rgb(255, 255, 255);
-    font-style: initial;
-    text-decoration: none;
-    text-align: center;
-    font-size: 30px;
-
-    background-color: rgba(145, 90, 126, 0.438);
-    border-radius: 3px;
-    cursor: pointer;
-
-    transition: .8s;
+.header-buttons-container {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
 }
 
-#menu ul a:hover {
-    background-color:#EDD8CD;
-    color: rgba(26, 39, 95, 0.671);
+.header-button {
+  width: 100%;
+  height: 1.3rem;
+
+  color: rgb(255, 255, 255);
+  background-color: rgba(145, 90, 126, 0.438);
+  padding: 1.4rem;
+  text-align: center;
+  font-size: 1.7rem;
+  overflow: hidden;
+  font-weight: bold;
+
+  box-shadow: -0.1px 2px 0.5rem rgb(75, 59, 44);
+  transition: 1s;
 }
 
-.button1 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-overflow: clip;
-    overflow: hidden;
+.header-button:hover {
+  background-color: rgba(182, 115, 158, 0.438);
+  width: 120%;
+  z-index: 100;
+  position: inherit;
 }
 
-.button2 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-overflow: clip;
-    overflow: hidden;
+.header-button:active {
+  background-color: rgb(231, 172, 9);
 }
 
-.button3 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-overflow: clip;
-    overflow: hidden;
-}
-.button4 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-overflow: clip;
-    overflow: hidden;
+#root {
+  display: flex;
+  height: 80vh;
+  align-items: center;
 }
 
-/* Menu */
-
-#allOptions {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+.user-input-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 25rem;
 }
 
-/* Opção 1 "O que é?" */
+.user-input-phrase,
+.user-input-number {
+  height: 2.5rem;
+  margin-bottom: 1rem;
 
-#option1{
-    display: none;
+  border: 0.04rem solid white;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 254, 251, 0.486);
+
+  text-align: center;
+  font-size: 1.2rem;
 }
 
-.textOption1 {
-    width: 90%;
-    margin-left: 30px;
-    padding: 7px;
-    background-color: rgba(235, 232, 203, 0.438);
+.user-input-container label {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 
-    color: #192231;
-    text-align: justify;
-    font-style: initial;
-    font-size: 25px;
-}
-.medalhaoImg{
-    border-radius: 140%;
-    margin-left: 300px;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(1, 1, 54);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.textOption1-2 {
-    width: 90%;
-    margin-left: 30px;
-    background-color:  rgba(235, 232, 203, 0.438);
-
-    padding: 7px;
-    color: #192231;
-    text-align: justify;
-    font-style: initial;
-    font-size: 25px;
+hr {
+  margin: 1rem 0;
 }
 
-/* Opção 2 "Como funciona?" */
-
-#option2{
-    display: none;
+.user-input-phrase:focus,
+.user-input-number:focus,
+.code-button:focus {
+  outline: 0.2rem solid rgba(145, 90, 126, 0.363);
 }
 
-.textOption2 {
-    width: 90%;
-    margin-left: 30px;
-    background-color:  rgba(235, 232, 203, 0.438);
-
-    padding: 7px;
-    color: #192231;
-    text-align: justify;
-    font-style: initial;
-    font-size: 25px;
+.user-input-phrase {
+  width: 20rem;
+  resize: none;
 }
 
-.cifraImg {
-    border-radius: 20px;
-    margin-left: 100px;
+.alert-area,
+.alert-area-number {
+  color: rgb(199, 21, 60);
+  font-weight: lighter;
 }
 
-/* Opção 3 Codificar */
-
-#option3{
-    display: none;
-
+.user-input-number {
+  width: 3rem;
 }
 
+.code-button {
+  height: 3rem;
+  width: 11rem;
 
-/* Caixa de entrada de dados */
+  background: white;
+  font-size: 1.4rem;
+  font-weight: bold;
 
-
-#in {
-    width: 90%;
-    margin-left: 100px;
-    margin-top: 50px;
+  border: 0.03rem solid #676666;
+  border-radius: 0.5rem;
+  color: #676666;
+  cursor: pointer;
 }
 
-.phraseIn {
-    font-size: 20px;
-    margin-right: 5px;
-    width: 300px;
-    height: 50px;
+.error {
+  animation: glowing 2000ms infinite;
 }
 
-
-
-/* Caixa de saída de dados */
-
-#out {
-    width: 1200px;
-    margin-left: 100px;
-    margin-top: 30px;
+.change-to-decode {
+  font-size: 1.4rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  color: #585858;
+  margin: 3rem;
+  cursor: pointer;
 }
 
-.select {
-    display: block;
-    margin-top: 3px;
-}
-.cipherIn {
-    margin-left: 100px;
-    margin-top: 80px;
-}
-
-.offset {
-    background: rgba(4, 4, 48, 0.507);
-    border: rgba(15, 15, 99, 0.486);
-    border-radius: 10px;
-
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-
-    width: 260px;
-    height: 30px;
-
-    cursor: pointer;
-    transition: .5s;
+.code-text {
+  background-color: #ffffff91;
+  font-size: 3rem;
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
+  border-radius: 1rem;
 }
 
-.codeButton{
-    background-color:#192231;
-    border: rgba(15, 15, 99, 0.486);
-    border-radius: 10px;
-
-    color: rgb(248, 248, 248);
-    font-size: 30px;
-    font-style: unset;
-
-    width: 200px;
-    height: 50px;
-
-    cursor: pointer;
-    transition: .5s;
-}
-#capturarCipher {
-    width: 230px;
-}
-
-.codeButton:hover {
-    background-color:rgb(58, 65, 99);
-    color: rgb(255, 255, 255) ;
-}
-
-#valorFinal {
-
-    background-color:  rgba(235, 232, 203, 0.438);
-    border: 40px;
-    padding: 4px;
-
-    border-radius: 10px;
-    color: #192231;
-    font-size: 20px;  
-    font-style: inherit; 
-}
-
-/* Opção 4 Desafio */
-
-#option4 {
-    display: none;
-}
-.textOption4 {
-    
-    padding: 10px;
-    width: 40%;
-    margin-left: 30px;
-
-    border-radius: 6px;
-    background-color: rgba(235, 232, 203, 0.438);
-
-    color: #192231;
-    text-align: center;
-    font-style: initial;
-    font-size: 19px;
-}
-.textOption4 h2 {
-    padding: 0;
-    margin: 0;
-}
-.textOption4 p {
-    width: 95%;
-    font-size: 20px;
-    font-style: initial;
-    text-align: center;
-}
-
-#dica {
-    background: #192231;
-    border: rgba(15, 15, 99, 0.486);
-    border-radius: 10px;
-
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    font-style: unset;
-
-    width: 200px;
-    height: 50px;
-
-    cursor: pointer;
-    transition: .5s;
-}
-#dica:hover {
-    background-color: rgb(231, 172, 9);
-    color: rgba(15, 15, 99, 0.623) ;
-}
-
-.textDesafio {
-    
-    width: 90%;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 30px;
-    
-    background-color: rgba(235, 232, 203, 0.438);
-    border-radius: 5px;
-
-    color: #192231;
-    text-align: justify;
-    font-style: initial;
-    font-size: 30px;
+@keyframes glowing {
+  0% {
+    border: 0.2rem solid #c410c4c5;
+  }
+  50% {
+    border: 0.2rem solid rgba(167, 16, 79, 0.541);
+  }
+  100% {
+    border: 0.2rem solid #610264a8;
+  }
 }
