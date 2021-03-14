@@ -7,7 +7,13 @@ export const listenerButton = (eventClick) => {
   const mainArea = document.querySelector("#root");
   eventClick.addEventListener("click", (event) => {
 
-    if (event.target.innerHTML === "Vamos testar?") {
+    if (event.target.innerHTML === "O que é?") {
+      mainArea.innerHTML = aboutFrame;
+    }
+    else if (event.target.innerHTML === "Como funciona?") {
+      mainArea.innerHTML = "REFATORANDO...";
+    }
+    else if (event.target.innerHTML === "Vamos testar?") {
       mainArea.innerHTML = cipherFrame;
 
       const wordInput = document.querySelector(".user-input-phrase");
@@ -28,12 +34,6 @@ export const listenerButton = (eventClick) => {
         alertNumber
       );
       inputEvents.changeButton(event, changeBtn, button);
-    }
-    else if (event.target.innerHTML === "O que é?") {
-      mainArea.innerHTML = aboutFrame;
-    }
-    else if (event.target.innerHTML === "Como funciona?") {
-      mainArea.innerHTML = "REFATORANDO...";
     }
     else if (event.target.innerHTML === "Desafio de lógica") {
       mainArea.innerHTML = "REFATORANDO...";
