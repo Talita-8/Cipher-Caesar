@@ -78,6 +78,45 @@ header {
   align-items: center;
 }
 
+/* Menu: O que é? */
+.about-container {
+  display: flex;
+  width: 100%;
+  background-color: #000000d4;
+}
+
+picture {
+  width: 40rem;
+  height: auto;
+}
+
+.img-imperator {
+  max-width: 25rem;
+  object-fit: unset;
+}
+
+.about-text {
+  width: 90%;
+  padding: 1.5rem;
+  color: white;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+}
+
+.about-text p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.img-medallion {
+  width: 13rem;
+  object-fit: unset;
+}
+
+ /* Menu: Vamos testar */
+
 .user-input-container {
   display: flex;
   flex-flow: column;
@@ -173,6 +212,7 @@ hr {
   text-align: center;
   border-radius: 1rem;
 }
+
 
 @keyframes glowing {
   0% {
