@@ -1,6 +1,7 @@
 import { cipherFrame } from "./cipher/components.js";
 import { inputEvents } from "./cipher/functions/inputs.js";
 import { aboutFrame } from "./about/components.js";
+import { howFrame } from "./how/components.js";
 
 export const listenerButton = (eventClick) => {
 
@@ -11,7 +12,7 @@ export const listenerButton = (eventClick) => {
       mainArea.innerHTML = aboutFrame;
     }
     else if (event.target.innerHTML === "Como funciona?") {
-      mainArea.innerHTML = "REFATORANDO...";
+      mainArea.innerHTML = howFrame;
     }
     else if (event.target.innerHTML === "Vamos testar?") {
       mainArea.innerHTML = cipherFrame;
