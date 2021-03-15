@@ -10,7 +10,7 @@ export const howFrame = `
     <p>
       O mecanismo consiste em subsituir as letras do alfabeto, dado um deslocamento.
       O imperador Júlio César costumava usar um deslocamento de 3 posições, logo A seria 
-      substituído por 3 letras á sua frente, no caso a letra D. B se tornaria E, e assim por diante. 
+      substituído por 3 letras à sua frente, no caso a letra D. B se tornaria E, e assim por diante. 
     </p>
     <div class="cipher-example">
       <ul>
