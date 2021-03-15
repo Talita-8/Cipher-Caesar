@@ -113,6 +113,7 @@ picture {
 .img-medallion {
   width: 13rem;
   object-fit: unset;
+  animation: rotate 10s infinite;
 }
 
 
@@ -261,12 +262,31 @@ hr {
     margin-top: 0;
   }
   50% { 
-    margin-top: -16%;
+    margin-top: -8rem;
   }
   75% {
-    margin-top: -32%;
+    margin-top: -14rem;
   }
   100% {
-    margin-top: -50%;
+    margin-top: -22rem;
+  }
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
