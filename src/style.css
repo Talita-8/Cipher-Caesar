@@ -82,7 +82,8 @@ header {
 .about-container {
   display: flex;
   width: 100%;
-  background-color: #000000d4;
+  margin-top: 1rem;
+  background-color: #3c3842e3;
 }
 
 picture {
@@ -113,6 +114,21 @@ picture {
 .img-medallion {
   width: 13rem;
   object-fit: unset;
+}
+
+
+/* Menu: Como funciona? */
+
+.cipher-example {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.cipher-example p {
+  font-size: 2rem;
+  border: 0.01rem solid;
+  padding: 0.5rem;
 }
 
  /* Menu: Vamos testar */
@@ -225,3 +241,4 @@ hr {
     border: 0.2rem solid #610264a8;
   }
 }
+
