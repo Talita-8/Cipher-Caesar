@@ -9,18 +9,16 @@ export const howFrame = `
     <hr>
     <p>
       O mecanismo consiste em subsituir as letras do alfabeto, dado um deslocamento.
-      César costumava usar um deslocamento de 3 posições, logo A seria substituído por 
-      D, B se tornaria E, e assim por diante. 
+      O imperador Júlio César costumava usar um deslocamento de 3 posições, logo A seria 
+      substituído por 3 letras à sua frente, no caso a letra D. B se tornaria E, e assim por diante. 
     </p>
     <div class="cipher-example">
-        <p>C</p><p>I</p><p>F</p><p>R</p><p>A</p>
-    </div>
-    <div class="cipher-example">
-        <p class="first-letter">C</p>
-        <p class="second-letter">I</p>
-        <p class="third-letter">F</p>
-        <p class="fourth-letter">R</p>
-        <p class="fifth-letter">A</p>
+      <ul>
+        <li><p>C</p><p>I</p><p>F</p><p>R</p><p>A</p> </li>
+        <li><p>D</p><p>J</p><p>G</p><p>S</p><p>B</p> </li>
+        <li><p>E</p><p>K</p><p>H</p><p>T</p><p>C</p> </li>
+        <li><p>F</p><p>L</p><p>I</p><p>U</p><p>D</p> </li>
+      </ul>
     </div>
   </article>
 </div>
