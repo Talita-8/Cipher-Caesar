@@ -6,38 +6,53 @@ export const pickQuote = () => {
   const quote = caesarQuotes[randomNumber];
 
   function encodeAndSeparate(offset, string) {
+    const stringUpper = string.toUpperCase()
     let unicodeLetter = " ";
     let encoded = [];
-    let originalString = [];
-
-    for (let i = 0; i < string.length; i++) {
-      unicodeLetter = string.charCodeAt(i);
+    
+    for (let i = 0; i < stringUpper.length; i++) {
+      unicodeLetter = stringUpper.charCodeAt(i);
       if (unicodeLetter == 32) {
         encoded.push(" ");
-        originalString.push(" ");
-      } else if (unicodeLetter == 44) {
+         } else if (unicodeLetter == 44) {
         encoded.push(",");
-        originalString.push(",");
-      } else if (unicodeLetter == 46) {
+         } else if (unicodeLetter == 46) {
         encoded.push(".");
-        originalString.push(".");
-      } else {
+         } else {
         encoded.push(
           String.fromCharCode(((unicodeLetter - 65 + offset) % 26) + 65)
         );
-        originalString.push(string[i]);
-      }
+        }
       if(encoded[i] === " "){
         document.querySelector(".char-container").innerHTML += `
         <input type="text" class="hidden-input" disabled="disabled">
       `
-      }
-      else
-      document.querySelector(".char-container").innerHTML += `
-        <input type="text" placeholder="${encoded[i]}">
+      } else
+        document.querySelector(".char-container").innerHTML += `
+        <input type="text" class="input-letter" data-letter="${stringUpper[i]}" placeholder="${encoded[i]}">
       `
-    }
-    
-  }
+    } 
+  };
+
+  const checkInput = () => {
+    document
+    .querySelectorAll(".input-letter")
+    .forEach((letter) => {
+      letter.addEventListener("keyup", () => {
+         const value = letter.value.toUpperCase();
+         const rightAnswer = letter.dataset.letter
+         if(value !== rightAnswer){
+           letter.classList.add("error")
+         }
+         else {
+           letter.classList.remove("error")
+           letter.classList.add("right-answer")
+         }
+      })
+       
+    })
+  };
+
    encodeAndSeparate(randomOffset, quote);
+   checkInput();
 };

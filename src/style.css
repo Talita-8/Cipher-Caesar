@@ -246,16 +246,20 @@ hr {
   width: 55%;
 }
 
-.char-container input {
+.input-letter {
   width: 3rem;
   height: 3rem;
   
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   background-color: white;
 
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
+}
+
+.right-answer {
+  background-color: transparent;
 }
 
 .hidden-input {
