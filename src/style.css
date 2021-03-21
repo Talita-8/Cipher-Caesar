@@ -242,6 +242,10 @@ hr {
 
 /* Menu: Desafio de Lógica */
 
+.char-container {
+  width: 55%;
+}
+
 .char-container input {
   width: 3rem;
   height: 3rem;
