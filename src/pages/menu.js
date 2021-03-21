@@ -2,6 +2,8 @@ import { cipherFrame } from "./cipher/components.js";
 import { inputEvents } from "./cipher/functions/inputs.js";
 import { aboutFrame } from "./about/components.js";
 import { howFrame } from "./how/components.js";
+import { challengeFrame } from "./challenge/components.js";
+import { pickQuote } from "./challenge/functions/createQuotes.js"
 
 export const listenerButton = (eventClick) => {
 
@@ -37,7 +39,8 @@ export const listenerButton = (eventClick) => {
       inputEvents.changeButton(event, changeBtn, button);
     }
     else if (event.target.innerHTML === "Desafio de lógica") {
-      mainArea.innerHTML = "REFATORANDO...";
+      mainArea.innerHTML = challengeFrame;
+      pickQuote();
     }
   })
 };

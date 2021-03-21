@@ -116,7 +116,6 @@ picture {
   animation: rotate 10s infinite;
 }
 
-
 /* Menu: Como funciona? */
 
 .cipher-example {
@@ -143,7 +142,7 @@ picture {
   text-align: center;
 }
 
- /* Menu: Vamos testar */
+/* Menu: Vamos testar */
 
 .user-input-container {
   display: flex;
@@ -241,6 +240,23 @@ hr {
   border-radius: 1rem;
 }
 
+/* Menu: Desafio de Lógica */
+
+.char-container input {
+  width: 3rem;
+  height: 3rem;
+  
+  border-radius: 0.5rem;
+  background-color: white;
+
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hidden-input {
+  visibility: hidden;
+}
 
 @keyframes glowing {
   0% {
@@ -261,7 +277,7 @@ hr {
   25% {
     margin-top: 0;
   }
-  50% { 
+  50% {
     margin-top: -8rem;
   }
   75% {
@@ -270,7 +286,6 @@ hr {
   100% {
     margin-top: -22rem;
   }
-  
 }
 
 @keyframes rotate {
