@@ -54,11 +54,10 @@ export const inputEvents = {
   changeButton: (event, eventClicked, button) => {
     event.preventDefault();
     eventClicked.addEventListener("click", () => {
-      if(button.innerHTML === "Criptografar"){
+      if (button.innerHTML === "Criptografar") {
         button.innerHTML = "Descriptografar";
         eventClicked.innerHTML = "Precisa criptografar? Clique aqui";
-      }
-      else if(button.innerHTML === "Descriptografar"){
+      } else if (button.innerHTML === "Descriptografar") {
         button.innerHTML = "Criptografar";
         eventClicked.innerHTML = "Precisa descriptografar? Clique aqui";
       }
