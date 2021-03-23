@@ -24,7 +24,7 @@ export const cipher = (
   } else {
     const upperLetter = word.toUpperCase();
     const numberOffset = Number(offset);
-    const mainArea = document.querySelector("#root");
+    const mainArea = document.querySelector(".result-container");
     const elementCreated = document.createElement("div");
     elementCreated.classList.add("code-text");
 

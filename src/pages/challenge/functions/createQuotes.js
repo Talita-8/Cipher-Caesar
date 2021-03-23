@@ -23,11 +23,10 @@ export const pickQuote = () => {
           String.fromCharCode(((unicodeLetter - 65 + offset) % 26) + 65)
         );
       }
-      if (encoded[i] === " ") {
+        encoded[i] === " " ?
         document.querySelector(".char-container").innerHTML += `
         <input type="text" class="hidden-input" disabled="disabled">
-      `;
-      } else
+      ` :
         document.querySelector(".char-container").innerHTML += `
         <input type="text" class="input-letter" data-letter="${stringUpper[i]}" placeholder="${encoded[i]}">
       `;
@@ -39,12 +38,12 @@ export const pickQuote = () => {
       letter.addEventListener("keyup", () => {
         const value = letter.value.toUpperCase();
         const rightAnswer = letter.dataset.letter;
-        if (value !== rightAnswer) {
-          letter.classList.add("error");
-        } else {
-          letter.classList.remove("error");
-          letter.classList.add("right-answer");
-        }
+         value !== rightAnswer ?
+          letter.classList.add("error")
+          :
+          letter.classList.remove("error")
+          letter.classList.add("right-answer")
+        
       });
     });
   };

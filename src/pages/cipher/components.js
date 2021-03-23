@@ -14,4 +14,5 @@ export const cipherFrame = `
       <button class="code-button">Criptografar</button>
       <button class="change-to-decode">Precisa descriptografar? Clique aqui</button>
     </div>
+    <div class="result-container"><div>
 `;
