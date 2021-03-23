@@ -1,7 +1,7 @@
 import { caesarQuotes } from "./quotes.js";
 
 export const pickQuote = () => {
-  const randomNumber = Math.floor(Math.random() * 5) + 1;
+  const randomNumber = Math.floor(Math.random() * 10) + 1;
   const randomOffset = Math.floor(Math.random() * 13) + 1;
   const quote = caesarQuotes[randomNumber];
 
