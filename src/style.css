@@ -148,7 +148,7 @@ picture {
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 25rem;
+  width: 30rem;
 }
 
 .user-input-phrase,
@@ -240,6 +240,13 @@ hr {
   border-radius: 1rem;
 }
 
+.result-container {
+  width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 /* Menu: Desafio de Lógica */
 
 .char-container {
@@ -249,7 +256,7 @@ hr {
 .input-letter {
   width: 3rem;
   height: 3rem;
-  
+
   border-radius: 0.3rem;
   background-color: white;
 
