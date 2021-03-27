@@ -1,4 +1,11 @@
 export const challengeFrame = `
-    <div class="char-container">
-    </div>
-`
+  <div class="challenge-container">
+  <div class="char-container">
+  </div>
+    <aside>
+      <p class="clue">
+        Que tal uma dica?
+      </p>
+    </aside>
+  </div>
+`;

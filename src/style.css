@@ -248,9 +248,12 @@ hr {
 }
 
 /* Menu: Desafio de Lógica */
+.challenge-container {
+  display: flex;
+}
 
 .char-container {
-  width: 55%;
+  width: 60%;
 }
 
 .input-letter {
@@ -271,6 +274,28 @@ hr {
 
 .hidden-input {
   visibility: hidden;
+}
+
+.challenge-container aside {
+  display: flex;
+  align-items: center;
+  margin-left: 8rem;
+}
+
+.clue {
+  font-family: monospace;
+  font-size: 2rem;
+  background-color: #f0f8ff54;
+  color: #192231;
+
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.clue:hover {
+  background-color: #f6f9fcb9;
 }
 
 @keyframes glowing {
