@@ -1,4 +1,5 @@
 import { caesarQuotes } from "./quotes.js";
+import { clue } from "./clue.js";
 
 export const pickQuote = () => {
   const randomNumber = Math.floor(Math.random() * 10) + 1;
@@ -9,6 +10,8 @@ export const pickQuote = () => {
     const stringUpper = string.toUpperCase();
     let unicodeLetter = " ";
     let encoded = [];
+    let oneLetter = " ";
+    let oneCode = " ";
 
     for (let i = 0; i < stringUpper.length; i++) {
       unicodeLetter = stringUpper.charCodeAt(i);
@@ -23,14 +26,20 @@ export const pickQuote = () => {
           String.fromCharCode(((unicodeLetter - 65 + offset) % 26) + 65)
         );
       }
+      oneLetter = stringUpper[i]
+      oneCode = encoded[i]
+
         encoded[i] === " " ?
         document.querySelector(".char-container").innerHTML += `
         <input type="text" class="hidden-input" disabled="disabled">
       ` :
         document.querySelector(".char-container").innerHTML += `
-        <input type="text" class="input-letter" data-letter="${stringUpper[i]}" placeholder="${encoded[i]}">
+        <input type="text" class="input-letter" 
+        data-letter="${stringUpper[i]}" 
+        placeholder="${encoded[i]}">
       `;
     }
+    clue(oneLetter, oneCode);
   }
 
   const checkInput = () => {
@@ -43,7 +52,6 @@ export const pickQuote = () => {
           :
           letter.classList.remove("error")
           letter.classList.add("right-answer")
-        
       });
     });
   };
