@@ -35,27 +35,5 @@ Atráves das opções do menu, o usuário:
  ![imgDesafio](https://user-images.githubusercontent.com/71895567/98428406-1e3aba00-2080-11eb-8613-7eabc70581f4.png)
 
 
-## 2. Detalhes do projeto
-
- Durante o projeto utilizei **HTML** e **CSS**:
- - [x] Semântica HTML.
- - [x] Seletores.
-
- **Javascript**:
- - [x] Uso de seletores do DOM.
- - [x] Manipular eventos do DOM.
- - [x] Manipulação dinâmica do DOM.
- - [x] Manipulação de Strings.
- - [x] Uso de condicionais.
- - [x] Uso de laços.
- - [x] Uso de funções.
- - [x] Declaração correta de variáveis.
-
- **Git e GitHub**:
-
- - [x] Uso de comandos de git
- - [x] Gerenciamento de repositorios de GitHub
-
-Além de realizar testes unitários.
 
 
